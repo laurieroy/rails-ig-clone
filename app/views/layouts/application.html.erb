@@ -11,7 +11,12 @@
   </head>
 
   <body>
-    <%= render "layouts/navbar" %>
+    <%= render "layouts/navbar" if current_user %>
+
     <%= yield %>
   </body>
 </html>
+
+    <%# <div class="d-flex align-items-center justify-content-center mt-4">
+
+    </div> %>
