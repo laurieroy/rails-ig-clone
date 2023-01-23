@@ -49,6 +49,7 @@ gem "bootsnap", require: false
 gem "image_processing", "~> 1.2"
 
 # Project specific gems
+gem "activestorage-validator"
 gem "bootstrap", "~> 5.2.2"
 gem "devise"
 gem "font-awesome-sass", "~> 6.2.1"
