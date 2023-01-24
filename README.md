@@ -4,7 +4,7 @@ Instagram is a social media site to share photos.
 
 A Post may contain images, plus a caption. Images are restricted to image types using  [ activestorage validator](https://github.com/aki77/activestorage-validator), which also limits image size to 5 MB. 
 
-Users may comment on the posts. 
+Users may comment on the posts. These comments cannot be edited.
 
 Users may like a post, including their own. Likes are indicated by the count next to the heart. <!--  A user may also double-click on a post to like / unlike it -->
 
@@ -30,6 +30,7 @@ This was originally built to practice rails 7. I followed a [code-along](https:/
 
 ### Add in later
 - filePond also crops images
+- ability to edit comments
 
 ### To download this repo:
 
