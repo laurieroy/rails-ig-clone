@@ -2,18 +2,18 @@
 <div class="d-flex my-5 justify-content-center gap-5">
   <div class="d-flex flex-column gap-3">
     <%= render "stories/stories_list" %>
-    <% if @posts.nil? %>
-      <p>Add a post!</p>
-    <% else %>
+    <#% if @posts.nil? %>
+      <%# <p>Add a post!</p> %>
+    <%# else %>
       <div class="flex flex-column">
         <%= render "posts/post", post: current_user.posts.first %>
-        <%= render "posts/post", post: current_user.posts.first %>
-        <%= render "posts/post", post: current_user.posts.first %>
+        <%= render "posts/post", post: current_user.posts.second %>
+        <%= render "posts/post", post: current_user.posts.last %>
         <%#= current_user.posts.each do |p| %>
           <%#= render "posts/post", post: p %>
         <%# end %>
       </div>
-    <% end %>
+    <%# end %>
   </div>
 
 
