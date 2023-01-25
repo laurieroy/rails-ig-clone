@@ -5,7 +5,10 @@ class ApplicationController < ActionController::Base
    protected
 
    def configure_permitted_parameters
-      attributes = %i[full_name phone_number username ]
-      devise_parameter_sanitizer.permit(:sign_up, keys: attributes)
+      su_attributes = %i[full_name phone_number username]
+      edit_attributes = %i[full_name phone_number username profile_picture bio private]
+
+      devise_parameter_sanitizer.permit(:sign_up, keys: su_attributes)
+      devise_parameter_sanitizer.permit(:account_update, keys: edit_attributes)
    end
 end

@@ -6,17 +6,14 @@
       <p>Add a post!</p>
     <% else %>
       <div class="flex flex-column">
-        <%= render "posts/post", post: current_user.posts.first %>
-        <%= render "posts/post", post: current_user.posts.second %>
-        <%= render "posts/post", post: current_user.posts.last %>
-        <%#= current_user.posts.each do |p| %>
-          <%#= render "posts/post", post: p %>
-        <%# end %>
+        <%#= render "posts/post", post: current_user.posts.first %>
+        <%#= render "posts/post", post: current_user.posts.second %>
+        <%#= render "posts/post", post: current_user.posts.last %>
+        <% current_user.posts.each do |p| %>
+          <%= render "posts/post", post: p %>
+        <% end %>
       </div>
     <% end %>
   </div>
-
-
-
   <%= render "suggestions/suggestions_list" %>
 </div>
