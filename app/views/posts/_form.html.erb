@@ -8,7 +8,7 @@
         </div>
         <div class="modal-body d-flex">
           <div class="border-end border-secondary mx-2" style="width:60%;">
-            <%#= form.label :images, style: "display: block" %>
+            <%= form.label :images, class: "visually-hidden", style: "display: block" %>
             <%= form.file_field :images, multiple: true, id: "post-images", required: true %>
           </div>
 
@@ -34,15 +34,16 @@
               <span class="fw-bold mx-2"><%= current_user.username %></span>
             </div>
             <div>
-              <%#= form.label :caption, style: "display: block" %>
+              <%= form.label :caption, class: "visually-hidden", style: "display: block" %>
               <%= form.text_area :caption, rows: 8, placeholder: "Write a caption...", class: "form-control border-0", style: "resize:none" %>
             </div>
 
-            <div class="">
+            <div class=""> class: "visually-hidden",
+              <%= form.label :location, class: "visually-hidden", style: "display: block" %>
               <%= form.text_field :location, placeholder: "TODO: Add location", class: "form-control" %>
             </div>
             <div class="form-control d-flex justify-content-between align-items-center my-2 border" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              <a class="text-dark" style="text-decoration:none;">
+              <a class="text-dark">
                 Advanced Settings
               </a>
               <i class="fa-solid fa-angle-down"></i>

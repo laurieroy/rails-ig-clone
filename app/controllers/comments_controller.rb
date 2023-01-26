@@ -27,8 +27,9 @@ class CommentsController < ApplicationController
           render turbo_stream: turbo_stream.remove(
             "post#{@comment.post_id }_ModalComment#{@comment.id}"
           )
+        end
       end
-      
+    end
   end
 
   private

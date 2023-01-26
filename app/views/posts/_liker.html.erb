@@ -1,12 +1,12 @@
 <div class="d-flex justify-content-between">
   <div class="d-flex">
     <%= image_tag "profile.png", class: "img-thumbnail rounded-circle", style: "width: 3.5rem" %>
-    <div class="d-flex flex-column mx-2 justify-content-center">
-      <small class="fw-bold" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-width: 10rem"><%= liker.username %></small>
+    <div class="d-flex flex-column mx-3 justify-content-center">
+      <small class="fw-bold text-truncate" style="max-width: 10rem"><%= link_to liker do %><%= liker.username %><% end %></small>
  
     </div>
   </div>
-  <%= link_to root_path, class: "btn btn-sm btn-primary", style: "text-decoration:none" do %>
-    <small class="fw-bold text-white">Follow</small>
+  <%= link_to root_path, class: "btn btn-sm btn-primary" do %>
+    <small class="fw-bold text-white text-decoration-none">Follow</small>
   <% end %>
 </div>
