@@ -27,7 +27,7 @@
           <div class="modal-body">
             <div class="d-flex flex-column gap-3">
               <% post.comments.each do |comment| %>
-                <%= render "posts/modal_comment", comment: comment %>
+                <%= render "posts/modal_comment", comment: comment, data: { turbo: false } %>
               <% end %>
             </div>
           </div>
