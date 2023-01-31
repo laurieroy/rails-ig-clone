@@ -8,7 +8,7 @@ Users may comment on the posts. These comments cannot be edited.
 
 Users may like a post, including their own. Likes are indicated by the count next to the heart. <!--  A user may also double-click on a post to like / unlike it -->
 
-<!-- Users may follow others, and users are suggested. -->
+Users may follow others, and users are suggested.
 
 Post defaults: Allow comments and show likes
 
