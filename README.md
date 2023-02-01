@@ -1,20 +1,22 @@
 # Instagram clone
-
+## Description of the app
 Instagram is a social media site to share photos.
 
-A user must create a profile to interact with the app. The profile may be public or private.
+- A user must create a profile to interact with the app. The profile may be public or private.
 
-A Post may contain images, plus a caption. Images are restricted to image types using [activestorage validator](https://github.com/aki77/activestorage-validator), which also limits image size to 5 MB. 
+- A Post may contain images, plus a caption. Images are restricted to image types using [activestorage validator](https://github.com/aki77/activestorage-validator), which also limits image size to 5 MB. 
 
-Users may like a post, including their own. Likes are indicated by the count next to the heart. <!--  A user may also double-click on a post to like / unlike it -->
+- Users may like a post, including their own. Likes are indicated by the count next to the heart. <!--  A user may also double-click on a post to like / unlike it -->
 
-Users may also comment on their posts or others that are public, or by users that they follow, if comments are allowed. These comments cannot be edited.
+- Users may also comment on their posts or others that are public, or by users that they follow, if comments are allowed. These comments cannot be edited.
 
-Users may follow others, and users are suggested. Currently, the suggestions are just other users not currently followed. Public profiles automattically accept the follow request, but private profiles have the option to accept or reject the request.
+- Users may follow others, and users are suggested. Currently, the suggestions are just other users not currently followed. Public profiles automattically accept the follow request, but private profiles have the option to accept or reject the request.
 
-A count of comments and likes is kept.
+- A count of comments and likes is kept.
 
 Post defaults: Allow comments and show likes. 
+
+Stories and messaging are not implemented.
 
 ## Tech stack:
 

@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   post "toggle_like", to: "likes#toggle_like", as: :toggle_like
   
   devise_for :users
-  resources :users, only: [:show]
+  resources :users, only: %i[index show]
 
   root  'home#index'
 end
